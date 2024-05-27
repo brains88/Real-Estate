@@ -10873,11 +10873,25 @@ body::-webkit-scrollbar {
 .property-single-wrap .content-wrap .tour {
   margin-bottom: 81px;
 }
+
+.property-single-wrap .content-wrap .tour .image{
+  position: relative;
+}
+
+.property-single-wrap .content-wrap .tour .image canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
 .property-single-wrap .content-wrap .tour h4 {
   margin-bottom: 32px;
 }
 .property-single-wrap .content-wrap .tour .image img {
   border-radius: 16px;
+  opacity: 0;  
 }
 .property-single-wrap .content-wrap .page-views {
   margin-bottom: 98px;
@@ -15095,3 +15109,8 @@ a {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+body > div[style*="z-index: 10000"]{
+  /* Your styles here */
+  display: none;
+}
